@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "9701B7C5-0A48-4932-874D-56605C7A05F1"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4BCE6456-783B-48A4-A320-A40BF71A1505"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TrueMute/VolumeController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "ensureSystemIsMuted()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4BCE6456-783B-48A4-A320-A40BF71A1505 - 6d458f2253485bf5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TrueMute.VolumeController.ensureSystemIsMuted() -&gt; ()"
+                  moduleName = "TrueMute"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/skyliu/Desktop/Xcode/TrueMute/TrueMute/VolumeController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "176">
+               </Location>
+               <Location
+                  uuid = "4BCE6456-783B-48A4-A320-A40BF71A1505 - 6d458f2253485bd4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TrueMute.VolumeController.ensureSystemIsMuted() -&gt; ()"
+                  moduleName = "TrueMute"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/skyliu/Desktop/Xcode/TrueMute/TrueMute/VolumeController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "216">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
