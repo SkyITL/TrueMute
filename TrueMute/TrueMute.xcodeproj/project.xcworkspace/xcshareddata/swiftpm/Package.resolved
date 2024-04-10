@@ -1,12 +1,39 @@
 {
   "pins" : [
     {
+      "identity" : "hotkey",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/soffes/HotKey.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "4d02d80de143d69b7eeb5962729591a157a57ede"
+      }
+    },
+    {
       "identity" : "issoundadditions",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/InerziaSoft/ISSoundAdditions",
       "state" : {
         "branch" : "master",
         "revision" : "4b555f0354e6c280917bae8a598a258efe87ab98"
+      }
+    },
+    {
+      "identity" : "magnet",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Clipy/Magnet.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "3401f876f210e611b9969725ff0a9f3153bb1b31"
+      }
+    },
+    {
+      "identity" : "sauce",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Clipy/Sauce",
+      "state" : {
+        "revision" : "df657bc1beba23ffd580953f183cd756b5bcd514",
+        "version" : "2.4.1"
       }
     }
   ],

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E3993272BC609C30016AF85 /* HotKey in Frameworks */ = {isa = PBXBuildFile; productRef = 1E3993262BC609C30016AF85 /* HotKey */; };
+		1EC316242BC6532500BF3348 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1EC316232BC6532500BF3348 /* Info.plist */; };
 		1EE40A8B2BC53E520024811D /* TrueMuteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE40A8A2BC53E520024811D /* TrueMuteApp.swift */; };
 		1EE40A8D2BC53E520024811D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE40A8C2BC53E520024811D /* ContentView.swift */; };
 		1EE40A8F2BC53E530024811D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EE40A8E2BC53E530024811D /* Assets.xcassets */; };
@@ -16,6 +18,7 @@
 		1EE40AA92BC53E540024811D /* TrueMuteUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE40AA82BC53E540024811D /* TrueMuteUITestsLaunchTests.swift */; };
 		1EE40AF12BC540840024811D /* VolumeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE40AF02BC540840024811D /* VolumeController.swift */; };
 		1EE40AF42BC542770024811D /* ISSoundAdditions in Frameworks */ = {isa = PBXBuildFile; productRef = 1EE40AF32BC542770024811D /* ISSoundAdditions */; };
+		1EE40AF72BC574230024811D /* Magnet in Frameworks */ = {isa = PBXBuildFile; productRef = 1EE40AF62BC574230024811D /* Magnet */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1EC316232BC6532500BF3348 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1EE40A872BC53E520024811D /* TrueMute.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrueMute.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EE40A8A2BC53E520024811D /* TrueMuteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrueMuteApp.swift; sourceTree = "<group>"; };
 		1EE40A8C2BC53E520024811D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +59,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E3993272BC609C30016AF85 /* HotKey in Frameworks */,
+				1EE40AF72BC574230024811D /* Magnet in Frameworks */,
 				1EE40AF42BC542770024811D /* ISSoundAdditions in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -79,6 +85,7 @@
 		1EE40A7E2BC53E520024811D = {
 			isa = PBXGroup;
 			children = (
+				1EC316232BC6532500BF3348 /* Info.plist */,
 				1EE40A892BC53E520024811D /* TrueMute */,
 				1EE40A9B2BC53E540024811D /* TrueMuteTests */,
 				1EE40AA52BC53E540024811D /* TrueMuteUITests */,
@@ -152,6 +159,8 @@
 			name = TrueMute;
 			packageProductDependencies = (
 				1EE40AF32BC542770024811D /* ISSoundAdditions */,
+				1EE40AF62BC574230024811D /* Magnet */,
+				1E3993262BC609C30016AF85 /* HotKey */,
 			);
 			productName = TrueMute;
 			productReference = 1EE40A872BC53E520024811D /* TrueMute.app */;
@@ -227,6 +236,8 @@
 			mainGroup = 1EE40A7E2BC53E520024811D;
 			packageReferences = (
 				1EE40AF22BC542770024811D /* XCRemoteSwiftPackageReference "ISSoundAdditions" */,
+				1EE40AF52BC574230024811D /* XCRemoteSwiftPackageReference "Magnet" */,
+				1E3993252BC609C30016AF85 /* XCRemoteSwiftPackageReference "HotKey" */,
 			);
 			productRefGroup = 1EE40A882BC53E520024811D /* Products */;
 			projectDirPath = "";
@@ -244,6 +255,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EC316242BC6532500BF3348 /* Info.plist in Resources */,
 				1EE40A922BC53E530024811D /* Preview Assets.xcassets in Resources */,
 				1EE40A8F2BC53E530024811D /* Assets.xcassets in Resources */,
 			);
@@ -595,6 +607,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		1E3993252BC609C30016AF85 /* XCRemoteSwiftPackageReference "HotKey" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/soffes/HotKey.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		1EE40AF22BC542770024811D /* XCRemoteSwiftPackageReference "ISSoundAdditions" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/InerziaSoft/ISSoundAdditions";
@@ -603,13 +623,31 @@
 				kind = branch;
 			};
 		};
+		1EE40AF52BC574230024811D /* XCRemoteSwiftPackageReference "Magnet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Clipy/Magnet.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		1E3993262BC609C30016AF85 /* HotKey */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1E3993252BC609C30016AF85 /* XCRemoteSwiftPackageReference "HotKey" */;
+			productName = HotKey;
+		};
 		1EE40AF32BC542770024811D /* ISSoundAdditions */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 1EE40AF22BC542770024811D /* XCRemoteSwiftPackageReference "ISSoundAdditions" */;
 			productName = ISSoundAdditions;
+		};
+		1EE40AF62BC574230024811D /* Magnet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1EE40AF52BC574230024811D /* XCRemoteSwiftPackageReference "Magnet" */;
+			productName = Magnet;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

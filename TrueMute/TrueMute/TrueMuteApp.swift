@@ -1,38 +1,41 @@
 import SwiftUI
-import AppKit
+import HotKey
+import Foundation
+import Combine
+
+class HotKeyConfiguration: ObservableObject {
+    @Published var selectedKey: Key = .r
+    @Published var modifiers: NSEvent.ModifierFlags = [.command, .option]
+}
 
 @main
-struct YourAppName: App {
+struct TrueMute: App {
     @NSApplicationDelegateAdaptor(VolumeController.self) var volumeController
-
-
+    @StateObject private var hotKeyConfig = HotKeyConfiguration()
+    
+    // Retain the HotKey instance
+    static var hotKey: HotKey?
+    
     init() {
         setupHotkey()
     }
 
     var body: some Scene {
-        WindowGroup {
-            ContentView()
+            WindowGroup {
+                ContentView()
+                    .onAppear {
+                    NSApp.windows.forEach { $0.close() }
+                }
+            }
+        }
+    
+    func setupHotkey() {
+        TrueMute.hotKey = HotKey(key: .m, modifiers: [.command, .shift])
+        TrueMute.hotKey?.keyDownHandler = {
+            VolumeController.isMuted.toggle()
         }
     }
     
-    func setupHotkey() {
-        print("Setting up hotkey")
-        NSEvent.addLocalMonitorForEvents(matching: [.keyDown]) { event in
-            print("Key event captured: \(event.charactersIgnoringModifiers ?? "") with modifiers: \(event.modifierFlags)")
-            if event.modifierFlags.intersection([.command, .shift]) == [.command, .shift] && event.charactersIgnoringModifiers == "M" {
-                if VolumeController.isMuted == false{
-                    VolumeController.isMuted = true
-                }
-                else{
-                    VolumeController.isMuted = false
-                }
-                return nil
-            }
-            return event
-        }
-    }
 }
-
 
 

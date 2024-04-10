@@ -16,7 +16,8 @@ struct ContentView: View {
             }
             .scaledToFit()
             .buttonStyle(.bordered)
-            Text("You can minimize or close this window. The toggle Hot key is Command + Shift + M.")
+            Text("Hotkey is Global. You can minimize or close this window. ")
+            Text("The toggle Hot key is Command + Shift + M.")
         }
         .onAppear {
             // Set the closure to update the local state when isMuted changes.
